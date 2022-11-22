@@ -1,3 +1,5 @@
+import problems.FindXInRotatedArray
+
 fun main(args: Array<String>) {
 
     println("\n\n============ Binary Search Example ============\n\n")
@@ -9,5 +11,16 @@ fun main(args: Array<String>) {
         println("indexOf value: $targetValue is $indexOf")
     else
         println("Target value doesn't exist in the array")
+
+    val sortedRotatedArr: Array<Int> = arrayOf(5,6,7,12,34,3,4)
+    val x  = 34
+    val index = FindXInRotatedArray().search(sortedRotatedArr, x)
+
+
+    if (index != -1)
+        println("indexOf value FindXInRotatedArray: $x is $index")
+    else
+        println("Target value doesn't exist in the FindXInRotatedArray")
+
 
 }
